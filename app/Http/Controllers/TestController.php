@@ -35,7 +35,9 @@ class TestController extends Controller
     public function store(Request $request)
     {
 
-        dd($request->input('sep', 'this_is_default'));
+        $sep = $request->input('sep', 'this_is_default');
+
+        var_dump($sep);
 
         dd($request->all());
 
